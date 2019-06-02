@@ -1,5 +1,7 @@
 {
   "name": "ionic-firebase-twitter-oauth",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

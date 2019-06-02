@@ -1,14 +1,24 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      Ionic Twitter Firebase login
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+<ion-content padding>
+
+  <div text-center>
+    <ion-button (click)="login()">
+      Login
+    </ion-button>
   </div>
+
+  <ion-item *ngIf="user">
+    <h2>{{user.displayName}}</h2>
+    <ion-thumbnail item-end>
+      <img src="{{user.photoURL}}">
+    </ion-thumbnail>
+  </ion-item>
+
 </ion-content>
